@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_text02"
+            android:textColor="@color/_xpopup_white_color"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_icon_shuaxin"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_icon_bofang"
+            android:layout_marginStart="16dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_icon_zanting"
+            android:layout_marginStart="12dp"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+        
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_all_select"
+            android:layout_width="44dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            app:bl_solid_color="@android:color/white"
+            app:bl_corners_radius="3dp"
+            android:textColor="#010101"
+            android:textSize="12sp"
+            android:text="@string/device_text03"/>
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_add"
+            android:layout_width="44dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            app:bl_solid_color="@android:color/white"
+            app:bl_corners_radius="3dp"
+            android:layout_marginStart="8dp"
+            android:textColor="#010101"
+            android:textSize="12sp"
+            android:text="@string/device_text04"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

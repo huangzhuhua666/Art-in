@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">Art-in</string>
+    <string name="http_unknown_error">请求出错，未知错误</string>
+    <string name="http_account_error">账号异常，请重新登录</string>
+    <string name="http_data_explain_error">数据解析异常，请稍后</string>
+    <string name="http_server_out_time">服务器请求超时，请稍后再试</string>
+    <string name="http_network_error">请求失败，请检查网络设置</string>
+    <string name="http_response_error">服务器响应异常，请稍后再试</string>
+    <string name="http_server_error">服务器连接异常，请稍后再试</string>
+    <string name="http_request_cancel">请求被中断，请重试</string>
+    <string name="token_time_out">登陆超时，请重新登陆</string>
+
+    <string name="exit_app_t01">提示</string>
+    <string name="exit_app_t02">您是否要退出Art-in？</string>
+    <string name="exit_app_t03">您是否要退出账号？</string>
+
+    <string name="tab_t01">设备</string>
+    <string name="tab_t02">控制器</string>
+    <string name="tab_t03">场景</string>
+    <string name="tab_t04">我的</string>
+
+    <string name="device_text01">设备</string>
+    <string name="device_text02">新设备</string>
+    <string name="device_text03">全选</string>
+    <string name="device_text04">添加</string>
+    <string name="device_text05">未分组</string>
+    <string name="device_text06">新建组</string>
+    <string name="device_text07">请输入组名</string>
+    <string name="device_text08">该组名已经存在，请重新输入组名</string>
+    <string name="device_text09">重命名</string>
+    <string name="device_text10">删除</string>
+    <string name="device_text11">删除组成功</string>
+    <string name="device_text12">修改组名称</string>
+
+    <string name="device_scan_error">扫描设备异常</string>
+    <string name="device_scan_error2">请选择新设备</string>
+
+    <string name="permission_error">请同意相关权限</string>
+    <string name="permission_error2">被永久拒绝授权，请手动授予存储权限</string>
+
+    <string name="total_brightness">总亮度</string>
+
+    <string name="effect_name01">蜡烛</string>
+    <string name="effect_name02">壁炉</string>
+    <string name="effect_name03">篝火</string>
+    <string name="effect_name04">间断闪电</string>
+    <string name="effect_name05">频繁闪电</string>
+    <string name="effect_name06">持续闪电</string>
+    <string name="effect_name07">短暂的烟花</string>
+    <string name="effect_name08">持续的烟花</string>
+    <string name="effect_name09">烟花汇演</string>
+    <string name="effect_name10">警车</string>
+    <string name="effect_name11">消防车</string>
+    <string name="effect_name12">救护车</string>
+    <string name="effect_name13">慢速</string>
+    <string name="effect_name14">中速</string>
+    <string name="effect_name15">快速</string>
+    <string name="effect_name16">生日派对</string>
+    <string name="effect_name17">家庭派对</string>
+    <string name="effect_name18">俱乐部</string>
+    <string name="effect_name19">产品发布会</string>
+    <string name="effect_name20">新闻发布会</string>
+    <string name="effect_name21">狗仔队</string>
+
+    <string name="common_code_input_hint">输入验证码</string>
+    <string name="common_code_send">发送验证码</string>
+    <string name="common_code_send_hint">验证码已发送，请注意查收</string>
+    <string name="common_code_error_hint">验证码错误，请检查输入</string>
+
+    <string name="cover_t01">注册</string>
+    <string name="cover_t02">登录</string>
+
+    <string name="register_t01">邮箱</string>
+    <string name="register_toa_t01">请输入邮箱</string>
+    <string name="register_t02">验证码</string>
+    <string name="register_toa_t02">请输入验证码</string>
+    <string name="register_t03">密码</string>
+    <string name="register_toa_t03">请输入密码</string>
+    <string name="register_t04">重复密码</string>
+    <string name="register_toa_t04">请再次输入密码</string>
+    <string name="register_t05">手机号码注册</string>
+    <string name="register_t06">邮箱注册</string>
+    <string name="register_t07">手机</string>
+    <string name="register_toa_t07">请输入手机</string>
+    <string name="register_t08">两次密码输入不符，请重新输入</string>
+    <string name="register_t09">注册成功</string>
+
+    <string name="login_t01">邮箱/手机</string>
+    <string name="login_toa_t01">请输入邮箱或手机</string>
+    <string name="login_t02">密码</string>
+    <string name="login_toa_t02">请输入密码</string>
+    <string name="login_t03">验证码</string>
+    <string name="login_toa_t03">请输入验证码</string>
+    <string name="login_t04">验证码登录</string>
+    <string name="login_t05">密码登录</string>
+
+    <string name="my_t01">账号</string>
+    <string name="my_t02">语言</string>
+    <string name="my_toa_t02">请选择语言</string>
+    <string name="my_t03">设备绑定</string>
+    <string name="my_t04">固件升级</string>
+    <string name="my_t05">主页</string>
+    <string name="my_t06">消息</string>
+    <string name="my_t07">意见反馈</string>
+    <string name="my_t08">设置语言成功</string>
+    <string name="my_t09">简体中文</string>
+    <string name="my_t10">繁体中文</string>
+    <string name="my_t11">English</string>
+    <string name="my_t12">请选择语言</string>
+
+    <string name="feedback_t01">你有什么问题或者建议想对我们说？</string>
+    <string name="feedback_t02">您的主题</string>
+    <string name="feedback_toa_t02">请输入您的主题</string>
+    <string name="feedback_t03">您的报告意见，就是我们进步的源泉</string>
+    <string name="feedback_t04">提供问题截图(选填)</string>
+    <string name="feedback_t05">提交</string>
+    <string name="feedback_t06">请输入你的意见</string>
+    <string name="feedback_t07">提交意见成功</string>
+
+    <string name="pick_image01">请选择</string>
+    <string name="pick_image02">拍照</string>
+    <string name="pick_image03">相册</string>
+    <string name="pick_image04">文件不存在</string>
+
+    <string name="info_t01">昵称</string>
+    <string name="info_t02">手机号码</string>
+    <string name="info_t03">电子邮箱</string>
+    <string name="info_t04">修改密码</string>
+    <string name="info_t05">退出</string>
+
+    <string name="edit_pwd01">原密码</string>
+    <string name="edit_toa_pwd01">请输入原密码</string>
+    <string name="edit_toa1_pwd01">输入原密码错误</string>
+    <string name="edit_pwd02">新密码</string>
+    <string name="edit_toa_pwd02">请输入新密码</string>
+    <string name="edit_pwd03">修改密码成功</string>
+
+    <string name="pop_t_str01">连接中...</string>
+    <string name="pop_t_str02">正在寻找服务...</string>
+    <string name="pop_t_str03">正在断开连接...</string>
+    <string name="pop_t_str04">初始化中...</string>
+    <string name="pop_t_str05">导入mesh配置失败</string>
+    <string name="pop_t_str06">加载本地mesh配置失败</string>
+    <string name="pop_t_str07">正在发送配置邀请...</string>
+    <string name="pop_t_str08">已收到配置功能...</string>
+    <string name="pop_t_str09">正在发送预配置开始...</string>
+    <string name="pop_t_str10">正在发送预配置公钥...</string>
+    <string name="pop_t_str11">供应公钥已收到...</string>
+    <string name="pop_t_str12">正在等待用户身份验证输入...</string>
+    <string name="pop_t_str13">输入了OOB验证...</string>
+    <string name="pop_t_str14">供应输入已完成接收...</string>
+    <string name="pop_t_str15">正在发送配置确认...</string>
+    <string name="pop_t_str16">收到配置确认...</string>
+    <string name="pop_t_str17">正在随机发送配置...</string>
+    <string name="pop_t_str18">供应随机收到...</string>
+    <string name="pop_t_str19">正在发送配置数据...</string>
+    <string name="pop_t_str20">调配完成已收到...</string>
+    <string name="pop_t_str21">设置失败，收到...</string>
+    <string name="pop_t_str22">正在发送成分数据获取...</string>
+    <string name="pop_t_str23">组成数据状态已接收...</string>
+    <string name="pop_t_str24">正在发送默认的TLL get ...</string>
+    <string name="pop_t_str25">收到默认的TTL状态...</string>
+    <string name="pop_t_str26">正在发送应用密钥添加...</string>
+    <string name="pop_t_str27">应用密钥状态已接收...</string>
+    <string name="pop_t_str28">正在发送网络传输集...</string>
+    <string name="pop_t_str29">接收到网络传输状态...</string>
+    <string name="pop_t_str30">发送块确认</string>
+    <string name="pop_t_str31">接收块确认</string>
+    <string name="pop_t_str32">正在绑定Appkey...</string>
+    <string name="pop_t_str33">绑定Appkey成功...</string>
+    <string name="pop_t_str34">绑定Appkey失败...</string>
+    <string name="pop_t_str35">正在删除订阅...</string>
+    <string name="pop_t_str36">正在添加订阅...</string>
+    <string name="pop_t_str37">正在删除设备...</string>
+    <string name="pop_t_str38">取消</string>
+
+    <string name="led_info_t01">设备信息</string>
+    <string name="led_info_t02">移除</string>
+    <string name="led_info_t03">名称</string>
+    <string name="led_info_t04">类型</string>
+    <string name="led_info_t05">参数</string>
+    <string name="led_info_t06">亮度:</string>
+    <string name="led_info_t07">色温:</string>
+    <string name="led_info_t08">色相:</string>
+    <string name="led_info_t09">电量</string>
+    <string name="led_info_t10">温度</string>
+    <string name="led_info_t11">剩余时间</string>
+    <string name="led_info_t12">绑定状态</string>
+    <string name="led_info_t13">新建场景</string>
+    <string name="led_info_t14">请输入场景名称</string>
+    <string name="led_info_t15">创建场景成功</string>
+    <string name="led_info_t16">(当前)</string>
+    <string name="led_info_t17">设备：</string>
+    <string name="led_info_t18">设备组：</string>
+    <string name="led_info_t19">创建时间：</string>
+    <string name="led_info_t20">更新时间：</string>
+    <string name="led_info_t21">更新场景</string>
+    <string name="led_info_t22">删除场景</string>
+    <string name="led_info_t23">更新场景成功</string>
+    <string name="led_info_t24">删除场景成功</string>
+    <string name="led_info_t25">是否切换场景</string>
+    <string name="led_info_t26">饱和度:</string>
+    <string name="led_info_t27">色调:</string>
+
+    <string name="scene_t01">场景1</string>
+    <string name="scene_t02">请创建场景</string>
+    <string name="scene_t03">绑定新appkey失败</string>
+
+    <string name="pop_text01">从场景移除</string>
+    <string name="pop_text02">删除设备</string>
+    <string name="pop_text03">请输入设备名称</string>
+
+    <string name="dfu_text01">搜索</string>
+    <string name="dfu_text02">重要提示</string>
+    <string name="dfu_text03">在固件升级期间，请勿退出当前界面</string>
+    <string name="dfu_text04">升级</string>
+    <string name="dfu_text05">手动搜索</string>
+    <string name="dfu_text06">刷新</string>
+    <string name="dfu_text07">1.关机</string>
+    <string name="dfu_text08">2.长按设备F键开机直到屏幕显示DFU_mod</string>
+    <string name="dfu_text09">升级中</string>
+    <string name="dfu_text11">下载升级文件</string>
+    <string name="dfu_text12">固件升级进度</string>
+    <string name="dfu_text13">获取升级文件失败，退出dfu升级</string>
+    <string name="dfu_text14">下载固件失败，退出dfu升级</string>
+    <string name="dfu_text15">升级固件失败，连接已断开</string>
+    <string name="dfu_text16">固件升级成功</string>
+    <string name="dfu_text17">正在进入DFU升级模式...</string>
+    <string name="dfu_text18">该设备不支持自动进入DFU模式</string>
+
+    <string name="link_dk">设备已断开连接</string>
+
+
+
+
+</resources>

@@ -1,0 +1,86 @@
+{
+  "BusUtilsClass": "com.blankj.utilcode.util.BusUtils",
+  "rightBus": {
+    "logout": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent() }"
+    ],
+    "getElementSize": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent01(java.lang.String datas) }"
+    ],
+    "edit_note_name": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent03() }"
+    ],
+    "dfuModel": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent04(int address) }"
+    ],
+    "cover_finish": [
+      "{ desc: com.tw.artin.ui.activity.CoverActivity#onEvent() }"
+    ],
+    "setDfuData": [
+      "{ desc: com.tw.artin.ui.activity.DfuActivity#onEvent(java.util.List list), sticky: true, threadMode: MAIN }"
+    ],
+    "goDfu": [
+      "{ desc: com.tw.artin.ui.activity.DfuActivity#onEvent01(), threadMode: MAIN }"
+    ],
+    "typeElement": [
+      "{ desc: com.tw.artin.ui.activity.LedInfoActivity#onEvent(java.lang.String datas), sticky: true, threadMode: MAIN }"
+    ],
+    "getLedInfo": [
+      "{ desc: com.tw.artin.ui.activity.LedInfoActivity#onEvent01(java.lang.String datas), sticky: true, threadMode: MAIN }"
+    ],
+    "init_mesh_success": [
+      "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvent0(), sticky: true, threadMode: MAIN }",
+      "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent0(), sticky: true, threadMode: MAIN }"
+    ],
+    "search_device": [
+      "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvent1(boolean isBluetooth), sticky: true }",
+      "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent1(boolean isBluetooth), sticky: true }"
+    ],
+    "deal_with": [
+      "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvent2(), sticky: true }",
+      "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent2(), sticky: true }"
+    ],
+    "remove_scan": [
+      "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvent3(java.lang.String bluetooth_name), sticky: true }",
+      "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent3(java.lang.String bluetooth_name), sticky: true }"
+    ],
+    "HeartEvent": [
+      "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvnet4(int mAddress), sticky: true, threadMode: IO }"
+    ],
+    "Change_Current": [
+      "{ desc: com.tw.artin.ui.fragment.NScenesFragment#onEvent(), sticky: true }",
+      "{ desc: com.tw.artin.ui2.fragment.ScenesFragment#onEvent(), sticky: true }"
+    ],
+    "getCctData": [
+      "{ desc: com.tw.artin.ui2.fragment.NCctFragment#onEvent1(java.util.Map datas), sticky: true }"
+    ],
+    "cctOnOff": [
+      "{ desc: com.tw.artin.ui2.fragment.NCctFragment#onEvent2(java.util.Map datas), sticky: true }"
+    ],
+    "move_controller": [
+      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(int index), sticky: true, threadMode: MAIN }"
+    ],
+    "gone_hsi": [
+      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(boolean isGone), sticky: true, threadMode: MAIN }"
+    ],
+    "onLineStatue": [
+      "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent4(), sticky: true }"
+    ],
+    "getDfuList": [
+      "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent5(), sticky: true }"
+    ],
+    "EffectOnOff": [
+      "{ desc: com.tw.artin.ui2.fragment.NEffectFragment#onEvent1(java.util.Map datas), sticky: true }"
+    ],
+    "EffectGet": [
+      "{ desc: com.tw.artin.ui2.fragment.NEffectFragment#onEvent2(java.util.Map data), sticky: true }"
+    ],
+    "hsiOnOff": [
+      "{ desc: com.tw.artin.ui2.fragment.NHsiFragment#onEvent1(java.util.Map datas), sticky: true }"
+    ],
+    "getHsiData": [
+      "{ desc: com.tw.artin.ui2.fragment.NHsiFragment#onEvent2(java.util.Map datas), sticky: true }"
+    ]
+  },
+  "wrongBus": {}
+}

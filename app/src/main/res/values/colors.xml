@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="windowBackground">#F4F4F4</color>
+    <color name="textColor">#333333</color>
+    <color name="picture_color_transparent">#00000000</color>
+
+    <array name="arc_colors_custom">
+        <item>#EB5213</item>
+        <item>#F18902</item>
+        <item>#F5C207</item>
+        <item>#E5CF02</item>
+        <item>#FCE843</item>
+        <item>#FAFA86</item>
+        <item>#FEFEC1</item>
+        <item>#FEFBDC</item>
+        <item>#FEFDFB</item>
+        <item>#FEFCFD</item>
+        <item>#FEFEFE</item>
+        <item>#EEFAF9</item>
+        <item>#69CAFF</item>
+        <item>#4A92E4</item>
+        <item>#2C56BF</item>
+        <item>#09229D</item>
+    </array>
+</resources>

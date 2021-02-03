@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.gcssloop.widget.ArcSeekBar
+                    android:id="@+id/arc_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleY="-1"
+                    app:arc_colors="@array/arc_colors_custom"
+                    app:arc_max="10000"
+                    app:arc_min="2000"
+                    app:arc_open_angle="180"
+                    app:arc_rotate_angle="90"
+                    app:arc_thumb_mode="FILL_STROKE"
+                    app:arc_thumb_radius="12dp"
+                    app:arc_thumb_shadow_color="@android:color/black"
+                    app:arc_width="26dp"
+                    app:layout_constraintEnd_toEndOf="@+id/rsb_bar"
+                    app:layout_constraintStart_toStartOf="@+id/rsb_bar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <com.noober.background.view.BLTextView
+                        android:id="@+id/tv_zero"
+                        android:layout_width="38dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="26dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        app:bl_corners_radius="27dp"
+                        app:bl_solid_color="#2D3451"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.jaygoo.widget.RangeSeekBar
+                        android:id="@+id/rsb_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_zero"
+                        app:rsb_gravity="center"
+                        app:rsb_indicator_background_color="#2C3452"
+                        app:rsb_indicator_show_mode="alwaysHide"
+                        app:rsb_max="54"
+                        app:rsb_min="-54"
+                        app:rsb_mode="single"
+                        app:rsb_progress_drawable="@drawable/main_bg_progress"
+                        app:rsb_progress_drawable_default="@drawable/main_bg_progress"
+                        app:rsb_progress_height="26dp"
+                        app:rsb_progress_radius="10dp"
+                        app:rsb_thumb_drawable="@drawable/thumb_inactivated" />
+                </LinearLayout>
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/tv_k01"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:text="3200k"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:bl_corners_radius="30dp"
+                    app:bl_solid_color="#2D3451"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/tv_k02"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="38dp"
+                    android:layout_marginStart="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:text="5600k"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:bl_corners_radius="30dp"
+                    app:bl_solid_color="#2D3451"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/white"
+                            android:text="CCT:"/>
+
+                        <TextView
+                            android:id="@+id/tv_cct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginStart="3dp"
+                            android:textColor="@android:color/white"
+                            android:text="0"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/white"
+                            android:text="G/M:"/>
+
+                        <TextView
+                            android:id="@+id/tv_gm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginStart="3dp"
+                            android:textColor="@android:color/white"
+                            android:text="0"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/total_brightness"/>
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:id="@+id/total_bar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:rsb_gravity="center"
+                    app:rsb_mode="single"
+                    app:rsb_progress_color="#43F2F6"
+                    app:rsb_min="0"
+                    app:rsb_max="100"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shebei_btn_off"
+                    android:layout_marginEnd="12dp"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cct_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

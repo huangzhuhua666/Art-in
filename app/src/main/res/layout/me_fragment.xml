@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/titebar_v"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:title="@string/tab_t04"
+        app:backButton="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/n_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titebar_v">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_my01"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="@string/my_t01"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/shebei_btn_next"
+                android:background="#2E2E2E"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#575757"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#2E2E2E"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_t02"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_language"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:drawableRight="@mipmap/shebei_btn_next"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:textColorHint="@android:color/white"
+                    android:hint="@string/my_toa_t02"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#575757"/>
+
+            <TextView
+                android:id="@+id/tv_my02"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:background="#2E2E2E"
+                android:drawableRight="@mipmap/shebei_btn_next"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/my_t03"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#575757"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_my03"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#2E2E2E"
+                android:drawableRight="@mipmap/shebei_btn_next"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/my_t04"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#575757"/>
+
+            <TextView
+                android:id="@+id/tv_my04"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:background="#2E2E2E"
+                android:drawableRight="@mipmap/shebei_btn_next"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/my_t05"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#575757"/>
+
+            <TextView
+                android:id="@+id/tv_my05"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#2E2E2E"
+                android:drawableRight="@mipmap/shebei_btn_next"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/my_t06"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#575757"/>
+
+            <TextView
+                android:id="@+id/tv_my06"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#2E2E2E"
+                android:drawableRight="@mipmap/shebei_btn_next"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/my_t07"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#575757"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

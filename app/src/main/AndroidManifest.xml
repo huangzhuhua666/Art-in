@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tw.artin">
+
+    <!-- 外部存储读写权限 -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 安装包的权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!--位置信息-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+   <!-- <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />-->
+
+    <application
+        android:name=".App"
+        android:icon="@mipmap/androidlogo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n">
+
+        <!-- 适配 Android 7.0 文件意图 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            tools:replace="android:authorities"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource"/>
+        </provider>
+
+        <activity android:name=".ui.activity.CoverActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".MainTabActivity2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BrowserActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.FeedBackActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.MessageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.MyInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.EditPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.LedInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".dfu.NotificationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.DfuActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.SearchDfuActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.UpDataDfuActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".dfu.DfuService"/>
+
+    </application>
+
+</manifest>

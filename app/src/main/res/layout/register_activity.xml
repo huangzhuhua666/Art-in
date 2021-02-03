@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/cover_t01"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_reg01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/register_t01"/>
+
+        <EditText
+            android:id="@+id/et_email_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DEDEDE"
+            android:hint="@string/register_toa_t01"
+            android:maxLines="1"
+            android:textSize="15sp" />
+
+        <com.tw.artin.view.CountdownView
+            android:id="@+id/cd_view"
+            android:layout_width="86dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="@string/common_code_send"
+            android:textColor="@drawable/countdown_color_selector"
+            android:background="@drawable/countdown_selector"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#202020"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/register_t02"/>
+
+        <EditText
+            android:id="@+id/et_yzm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DEDEDE"
+            android:hint="@string/register_toa_t02"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#202020"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/register_t03"/>
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DEDEDE"
+            android:hint="@string/register_toa_t03"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#202020"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/register_t04"/>
+
+        <EditText
+            android:id="@+id/et_pwd2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DEDEDE"
+            android:hint="@string/register_toa_t04"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#202020"/>
+    
+    <com.noober.background.view.BLTextView
+        android:id="@+id/reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="@string/cover_t01"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="16dp"
+        app:bl_solid_color="#909090"
+        app:bl_corners_radius="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#0B5BB6"
+            android:textStyle="bold"
+            android:text="@string/register_t05"
+            android:layout_marginEnd="12dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/info_t04" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="#2E2E2E"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/edit_pwd01"/>
+
+        <com.tw.artin.view.PasswordEditText
+            android:id="@+id/et_now_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="#2E2E2E"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DEDEDE"
+            android:hint="@string/edit_toa_pwd01"
+            android:maxLines="1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#575757"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="#2E2E2E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/edit_pwd02"/>
+
+        <com.tw.artin.view.PasswordEditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="#2E2E2E"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textColorHint="#DEDEDE"
+            android:hint="@string/edit_toa_pwd02"
+            android:maxLines="1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/tv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="@string/info_t04"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="20dp"
+        app:bl_solid_color="#909090"
+        app:bl_corners_radius="4dp"/>
+
+</LinearLayout>

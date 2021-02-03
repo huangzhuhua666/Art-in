@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/my_t07"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="@string/feedback_t01"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"/>
+
+            <com.noober.background.view.BLLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:bl_solid_color="#A0A0A0"
+                app:bl_corners_radius="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback_t02"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A0A0A0"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:hint="@string/feedback_toa_t02"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"/>
+            </com.noober.background.view.BLLinearLayout>
+            
+            <com.noober.background.view.BLEditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:hint="@string/feedback_t03"
+                android:gravity="top"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                app:bl_corners_radius="4dp"
+                app:bl_solid_color="#A0A0A0"/>
+
+            <com.noober.background.view.BLLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                app:bl_solid_color="#A0A0A0"
+                app:bl_corners_radius="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="@string/feedback_t04"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp">
+                    
+                    <FrameLayout
+                        android:layout_width="66dp"
+                        android:layout_height="66dp">
+
+                        <ImageView
+                            android:id="@+id/iv_i01"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_gravity="bottom"
+                            android:src="@mipmap/icon_add_pic"/>
+
+                        <ImageView
+                            android:id="@+id/iv_del01"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="#ED1C24"
+                            android:layout_gravity="right"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:layout_marginStart="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_i02"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_gravity="bottom"
+                            android:src="@mipmap/icon_add_pic"/>
+
+                        <ImageView
+                            android:id="@+id/iv_del02"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="#ED1C24"
+                            android:layout_gravity="right"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:layout_marginStart="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_i03"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_gravity="bottom"
+                            android:src="@mipmap/icon_add_pic"/>
+
+                        <ImageView
+                            android:id="@+id/iv_del03"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="#ED1C24"
+                            android:layout_gravity="right"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </com.noober.background.view.BLLinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/feedback_t05"
+                app:bl_solid_color="#8F8F8F"
+                app:bl_corners_radius="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

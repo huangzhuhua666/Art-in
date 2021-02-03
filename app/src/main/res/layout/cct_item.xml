@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <View
+        android:id="@+id/v_select"
+        android:layout_width="2dp"
+        android:layout_height="32dp"
+        android:background="#43F2F6"/>
+
+    <View
+        android:id="@+id/v_kong"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+    <TextView
+        android:id="@+id/tv_cct_note_name"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center_vertical"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        tools:text="ssssss"/>
+
+</LinearLayout>
