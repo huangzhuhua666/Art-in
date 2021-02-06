@@ -229,6 +229,7 @@
     <string name="dfu_text18">该设备不支持自动进入DFU模式</string>
     <string name="dfu_text19">当前状态：升级中...</string>
     <string name="dfu_text20">升级期间，请勿退出APP或关闭设备电源</string>
+    <string name="dfu_text21">改型号的设备暂无升级</string>
 
     <string name="link_dk">设备已断开连接</string>
 

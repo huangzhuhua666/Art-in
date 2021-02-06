@@ -39,6 +39,13 @@
     "HeartEvent": [
       "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvnet4(int mAddress), sticky: true, threadMode: IO }"
     ],
+    "refresh_top_data": [
+      "{ desc: com.tw.artin.ui3.fragment.EffectFragment#onEvent(), threadMode: MAIN }"
+    ],
+    "gone_hsi": [
+      "{ desc: com.tw.artin.ui3.fragment.ControllerFragment#onEvent(boolean isGone), sticky: true, threadMode: MAIN }",
+      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(boolean isGone), sticky: true, threadMode: MAIN }"
+    ],
     "hsiOnOff": [
       "{ desc: com.tw.artin.ui2.fragment.NHsiFragment#onEvent1(java.util.Map datas), sticky: true }"
     ],
@@ -65,9 +72,6 @@
     ],
     "move_controller": [
       "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(int index), sticky: true, threadMode: MAIN }"
-    ],
-    "gone_hsi": [
-      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(boolean isGone), sticky: true, threadMode: MAIN }"
     ],
     "logout": [
       "{ desc: com.tw.artin.MainTabActivity2#onEvent() }"

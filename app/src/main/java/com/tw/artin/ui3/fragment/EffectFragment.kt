@@ -8,8 +8,11 @@ import com.chad.library.adapter.base.BaseBinderAdapter
 import com.tw.artin.MainTabActivity2
 import com.tw.artin.R
 import com.tw.artin.base.BaseInfVp
+import com.tw.artin.base.BaseInfoData
 import com.tw.artin.base.common.TwFragment
 import com.tw.artin.bean.EffectBean
+import com.tw.artin.bean.NControllerGruoupBean
+import com.tw.artin.bean.NControllerNoGroupBean
 import com.tw.artin.ui2.adapter.NEffectBinder
 import com.tw.artin.view.UniversalItemDecoration
 import com.tw.artin.vp.ControllerContract
@@ -25,7 +28,7 @@ class EffectFragment : TwFragment<MainTabActivity2>(), ControllerContract.View {
 
             addItemBinder(NEffectBinder())
 
-            setOnItemClickListener { adapter, view, position ->
+            setOnItemClickListener { adapter, _, position ->
 
                 val info = adapter.getItem(position) as EffectBean
 
@@ -79,8 +82,43 @@ class EffectFragment : TwFragment<MainTabActivity2>(), ControllerContract.View {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        getTopData()
+    }
+
+    private fun getTopData() {
+        (parentFragment as ControllerFragment?)?.let {
+            when (val node = it.mAdapter.getItem(it.mCurrentIndex)) {
+                is NControllerGruoupBean -> {
+                    mAdapter01.setList(if (node.deviceType == 2) BaseInfoData.getEffectList02() else BaseInfoData.getEffectList01())
+                    setSelectEffect(node.effect!!,node.preset!!)
+                }
+                is NControllerNoGroupBean -> {
+                    mAdapter01.setList(if (node.deviceType == 2) BaseInfoData.getEffectList02() else BaseInfoData.getEffectList01())
+                    setSelectEffect(node.effect!!,node.preset!!)
+                }
+            }
+        }
+    }
+
+    fun setSelectEffect(mEffect : Int,mPreset: Int){
+
+        mAdapter01.data.forEach {
+            it as EffectBean
+            it.isSelect = it.effect == mEffect && it.preset == mPreset
+        }
+        mAdapter01.notifyDataSetChanged()
+
+    }
+
     override fun onDestroy() {
         BusUtils.unregister(this)
         super.onDestroy()
+    }
+
+    @BusUtils.Bus(tag = "refresh_top_data",sticky = false,threadMode = BusUtils.ThreadMode.MAIN)
+    fun onEvent(){
+        getTopData()
     }
 }

@@ -61,7 +61,13 @@ class UpDataDfuActivity : TwActivity() {
 
                 override fun onSucceed(result: HttpData<DfuApi.DfuBean>?) {
                     super.onSucceed(result)
-                    result?.objx?.let {
+                    if (result?.objx == null) {
+                        ToastUtils.showLong(R.string.dfu_text21)
+                        finish()
+                        return
+                    }
+
+                    result.objx.let {
                         val path = it.attach
                         if (path != "") {
                             //downLoadFile(path)

@@ -64,11 +64,11 @@ class MainTabActivity2 : TwActivity(){
 
         BusUtils.register(this)
 
-//        shearControl = LightControl(this)
-//        shearControl.init()
+        shearControl = LightControl(this)
+        shearControl.init()
 
-//        mainControl = TotalControl(this)
-//        mainControl.init()
+        mainControl = TotalControl(this)
+        mainControl.init()
 
         //监听蓝牙开启关闭
         registerReceiver(
@@ -119,7 +119,7 @@ class MainTabActivity2 : TwActivity(){
             )
         )
 
-        mClass.add(ControllerFragment::class.java)
+        mClass.add(DeviceFragment::class.java)
         mClass.add(ControllerFragment::class.java)
         mClass.add(NScenesFragment::class.java)
         mClass.add(MeFragment::class.java)

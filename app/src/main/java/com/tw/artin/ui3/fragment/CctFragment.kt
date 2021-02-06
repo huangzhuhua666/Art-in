@@ -13,12 +13,7 @@ import com.tw.artin.R
 import com.tw.artin.base.BaseInfVp
 import com.tw.artin.base.common.TwFragment
 import com.tw.artin.vp.ControllerContract
-import kotlinx.android.synthetic.main.cct_fragment.*
 import kotlinx.android.synthetic.main.fragment_cct.*
-import kotlinx.android.synthetic.main.fragment_cct.arc_bar
-import kotlinx.android.synthetic.main.fragment_cct.rsb_bar
-import kotlinx.android.synthetic.main.fragment_cct.tv_k01
-import kotlinx.android.synthetic.main.fragment_cct.tv_k02
 import kotlinx.android.synthetic.main.fragment_controller.*
 
 /**
@@ -37,7 +32,6 @@ class CctFragment : TwFragment<MainTabActivity2>(), ControllerContract.View {
             setOnRangeChangedListener(object : OnRangeChangedListener {
 
                 override fun onStartTrackingTouch(view: RangeSeekBar?, isLeft: Boolean) {
-
                 }
 
                 override fun onRangeChanged(
@@ -46,9 +40,13 @@ class CctFragment : TwFragment<MainTabActivity2>(), ControllerContract.View {
                     rightValue: Float,
                     isFromUser: Boolean
                 ) {
-                    if (leftValue < -50) view?.setProgress(-50f)
+                    if (!isFromUser) {
 
-                    if (leftValue > 50) view?.setProgress(50f)
+                    } else {
+                        if (leftValue < -50) view?.setProgress(-50f)
+
+                        if (leftValue > 50) view?.setProgress(50f)
+                    }
                 }
 
                 override fun onStopTrackingTouch(view: RangeSeekBar?, isLeft: Boolean) {
@@ -81,7 +79,9 @@ class CctFragment : TwFragment<MainTabActivity2>(), ControllerContract.View {
                     progress: Int,
                     isUser: Boolean
                 ) {
-                    if (!isUser) (parentFragment as ControllerFragment?)?.scroll_view?.requestDisallowInterceptTouchEvent(false)
+                    if (!isUser) {
+                        (parentFragment as ControllerFragment?)?.scroll_view?.requestDisallowInterceptTouchEvent(false)
+                    }
                 }
 
                 override fun onStartTrackingTouch(seekBar: ArcSeekBar?) {
