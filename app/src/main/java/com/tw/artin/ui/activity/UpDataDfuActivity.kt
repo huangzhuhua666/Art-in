@@ -19,7 +19,6 @@ import no.nordicsemi.android.dfu.DfuProgressListenerAdapter
 import no.nordicsemi.android.dfu.DfuServiceInitiator
 import no.nordicsemi.android.dfu.DfuServiceListenerHelper
 import java.io.File
-import java.io.FileFilter
 
 
 class UpDataDfuActivity : TwActivity() {
@@ -92,9 +91,6 @@ class UpDataDfuActivity : TwActivity() {
                                 //本地有文件
                                 if (hasFile){
 
-                                    down_pbar.progress = 100
-                                    tv_download.text = "100%"
-
                                     postDelayed({
                                         DfuUpgrade(fPath)
                                     },800)
@@ -132,8 +128,7 @@ class UpDataDfuActivity : TwActivity() {
                 }
 
                 override fun onProgress(file: File?, progress: Int) {
-                    down_pbar.progress = progress
-                    tv_download.text = "$progress%"
+
                 }
 
                 override fun onComplete(file: File?) {
@@ -210,13 +205,13 @@ class UpDataDfuActivity : TwActivity() {
             currentPart: Int,
             partsTotal: Int
         ) {
+            pb_update.setProgress(percent)
+//            upgrade_pbar.progress = percent
+//            tv_jd.text = "($currentPart/$partsTotal)"
 
-            upgrade_pbar.progress = percent
-            tv_jd.text = "($currentPart/$partsTotal)"
+//            val sp = UtilsBigDecimal.div(avgSpeed.toDouble(),1.0)
 
-            val sp = UtilsBigDecimal.div(avgSpeed.toDouble(),1.0)
-
-            tv_upgrade.text = "$sp KB/s"
+//            tv_upgrade.text = "$sp KB/s"
         }
 
         override fun onError(deviceAddress: String, error: Int, errorType: Int, message: String) {

@@ -16,15 +16,14 @@ import com.tw.artin.ui.activity.CoverActivity
 import com.tw.artin.ui.adapter.ViewPager2Adapter
 import com.tw.artin.ui.fragment.DeviceFragment
 import com.tw.artin.ui.fragment.NScenesFragment
+import com.tw.artin.ui3.fragment.ControllerFragment
 import com.tw.artin.ui2.fragment.MeFragment
-import com.tw.artin.ui2.fragment.NControllerFragment
-import com.tw.artin.ui2.fragment.NDeviceFragment
 import com.tw.artin.view.CustomTabEntity
 import com.tw.artin.view.OnTabSelectListener
 import com.tw.artin.vp.TotalControl
 import com.tw.artin.vp2.LightControl
 import kotlinx.android.synthetic.main.main_tab_activity.*
-import java.util.ArrayList
+import java.util.*
 
 class MainTabActivity2 : TwActivity(){
 
@@ -65,11 +64,11 @@ class MainTabActivity2 : TwActivity(){
 
         BusUtils.register(this)
 
-        /*shearControl = LightControl(this)
-        shearControl.init()*/
+//        shearControl = LightControl(this)
+//        shearControl.init()
 
-        mainControl = TotalControl(this)
-        mainControl.init()
+//        mainControl = TotalControl(this)
+//        mainControl.init()
 
         //监听蓝牙开启关闭
         registerReceiver(
@@ -120,8 +119,8 @@ class MainTabActivity2 : TwActivity(){
             )
         )
 
-        mClass.add(DeviceFragment::class.java)
-        mClass.add(NControllerFragment::class.java)
+        mClass.add(ControllerFragment::class.java)
+        mClass.add(ControllerFragment::class.java)
         mClass.add(NScenesFragment::class.java)
         mClass.add(MeFragment::class.java)
 

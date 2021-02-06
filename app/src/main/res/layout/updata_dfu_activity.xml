@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical">
 
     <com.hjq.bar.TitleBar
         android:id="@+id/title_bar"
@@ -11,85 +13,60 @@
         android:layout_height="wrap_content"
         app:title="@string/dfu_text09"/>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp">
+        android:layout_height="match_parent">
+
+        <com.hzh.zprogressbar.CircleProgressBar
+            android:id="@+id/pb_update"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:botColor="@color/white"
+            app:botStrokeWidth="15dp"
+            app:isShowTxt="true"
+            app:layout_constraintBottom_toTopOf="@+id/tv_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:progressColor="#69c5d8"
+            app:progressStrokeWidth="15dp"
+            app:startPosition="TOP"
+            app:txtColor="@color/white"
+            app:txtSize="25sp"/>
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/dfu_text11"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
-
-        <TextView
-            android:id="@+id/tv_download"
+            android:id="@+id/tv_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/dfu_text19"
             android:textColor="@color/white"
-            android:textSize="14sp"/>
-    </LinearLayout>
-    
-    <ProgressBar
-        android:id="@+id/down_pbar"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:progress="1"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:progressDrawable="@drawable/progressbar_color"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp">
+            android:textSize="14sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@+id/tv_tip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pb_update"/>
 
         <TextView
+            android:id="@+id/tv_tip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dfu_text12"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/dfu_text20"
             android:textColor="@color/white"
-            android:textSize="14sp"/>
+            android:textSize="20sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_status"/>
 
-        <TextView
-            android:id="@+id/tv_jd"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:layout_marginStart="4dp"
-            android:textSize="14sp"/>
-
-        <TextView
-            android:id="@+id/tv_upgrade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
-    </LinearLayout>
-
-    <ProgressBar
-        android:id="@+id/upgrade_pbar"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:progress="1"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:progressDrawable="@drawable/progressbar_color2"/>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

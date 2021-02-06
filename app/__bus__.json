@@ -1,20 +1,11 @@
 {
   "BusUtilsClass": "com.blankj.utilcode.util.BusUtils",
   "rightBus": {
-    "logout": [
-      "{ desc: com.tw.artin.MainTabActivity2#onEvent() }"
+    "typeElement": [
+      "{ desc: com.tw.artin.ui.activity.LedInfoActivity#onEvent(java.lang.String datas), sticky: true, threadMode: MAIN }"
     ],
-    "getElementSize": [
-      "{ desc: com.tw.artin.MainTabActivity2#onEvent01(java.lang.String datas) }"
-    ],
-    "edit_note_name": [
-      "{ desc: com.tw.artin.MainTabActivity2#onEvent03() }"
-    ],
-    "dfuModel": [
-      "{ desc: com.tw.artin.MainTabActivity2#onEvent04(int address) }"
-    ],
-    "cover_finish": [
-      "{ desc: com.tw.artin.ui.activity.CoverActivity#onEvent() }"
+    "getLedInfo": [
+      "{ desc: com.tw.artin.ui.activity.LedInfoActivity#onEvent01(java.lang.String datas), sticky: true, threadMode: MAIN }"
     ],
     "setDfuData": [
       "{ desc: com.tw.artin.ui.activity.DfuActivity#onEvent(java.util.List list), sticky: true, threadMode: MAIN }"
@@ -22,11 +13,12 @@
     "goDfu": [
       "{ desc: com.tw.artin.ui.activity.DfuActivity#onEvent01(), threadMode: MAIN }"
     ],
-    "typeElement": [
-      "{ desc: com.tw.artin.ui.activity.LedInfoActivity#onEvent(java.lang.String datas), sticky: true, threadMode: MAIN }"
+    "cover_finish": [
+      "{ desc: com.tw.artin.ui.activity.CoverActivity#onEvent() }"
     ],
-    "getLedInfo": [
-      "{ desc: com.tw.artin.ui.activity.LedInfoActivity#onEvent01(java.lang.String datas), sticky: true, threadMode: MAIN }"
+    "Change_Current": [
+      "{ desc: com.tw.artin.ui.fragment.NScenesFragment#onEvent(), sticky: true }",
+      "{ desc: com.tw.artin.ui2.fragment.ScenesFragment#onEvent(), sticky: true }"
     ],
     "init_mesh_success": [
       "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvent0(), sticky: true, threadMode: MAIN }",
@@ -47,9 +39,11 @@
     "HeartEvent": [
       "{ desc: com.tw.artin.ui.fragment.DeviceFragment#onEvnet4(int mAddress), sticky: true, threadMode: IO }"
     ],
-    "Change_Current": [
-      "{ desc: com.tw.artin.ui.fragment.NScenesFragment#onEvent(), sticky: true }",
-      "{ desc: com.tw.artin.ui2.fragment.ScenesFragment#onEvent(), sticky: true }"
+    "hsiOnOff": [
+      "{ desc: com.tw.artin.ui2.fragment.NHsiFragment#onEvent1(java.util.Map datas), sticky: true }"
+    ],
+    "getHsiData": [
+      "{ desc: com.tw.artin.ui2.fragment.NHsiFragment#onEvent2(java.util.Map datas), sticky: true }"
     ],
     "getCctData": [
       "{ desc: com.tw.artin.ui2.fragment.NCctFragment#onEvent1(java.util.Map datas), sticky: true }"
@@ -57,11 +51,11 @@
     "cctOnOff": [
       "{ desc: com.tw.artin.ui2.fragment.NCctFragment#onEvent2(java.util.Map datas), sticky: true }"
     ],
-    "move_controller": [
-      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(int index), sticky: true, threadMode: MAIN }"
+    "EffectOnOff": [
+      "{ desc: com.tw.artin.ui2.fragment.NEffectFragment#onEvent1(java.util.Map datas), sticky: true }"
     ],
-    "gone_hsi": [
-      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(boolean isGone), sticky: true, threadMode: MAIN }"
+    "EffectGet": [
+      "{ desc: com.tw.artin.ui2.fragment.NEffectFragment#onEvent2(java.util.Map data), sticky: true }"
     ],
     "onLineStatue": [
       "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent4(), sticky: true }"
@@ -69,17 +63,23 @@
     "getDfuList": [
       "{ desc: com.tw.artin.ui2.fragment.NDeviceFragment#onEvent5(), sticky: true }"
     ],
-    "EffectOnOff": [
-      "{ desc: com.tw.artin.ui2.fragment.NEffectFragment#onEvent1(java.util.Map datas), sticky: true }"
+    "move_controller": [
+      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(int index), sticky: true, threadMode: MAIN }"
     ],
-    "EffectGet": [
-      "{ desc: com.tw.artin.ui2.fragment.NEffectFragment#onEvent2(java.util.Map data), sticky: true }"
+    "gone_hsi": [
+      "{ desc: com.tw.artin.ui2.fragment.NControllerFragment#onEvent(boolean isGone), sticky: true, threadMode: MAIN }"
     ],
-    "hsiOnOff": [
-      "{ desc: com.tw.artin.ui2.fragment.NHsiFragment#onEvent1(java.util.Map datas), sticky: true }"
+    "logout": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent() }"
     ],
-    "getHsiData": [
-      "{ desc: com.tw.artin.ui2.fragment.NHsiFragment#onEvent2(java.util.Map datas), sticky: true }"
+    "getElementSize": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent01(java.lang.String datas) }"
+    ],
+    "edit_note_name": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent03() }"
+    ],
+    "dfuModel": [
+      "{ desc: com.tw.artin.MainTabActivity2#onEvent04(int address) }"
     ]
   },
   "wrongBus": {}

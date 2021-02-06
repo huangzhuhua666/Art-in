@@ -99,7 +99,7 @@ dependencies {
 
     implementation 'com.github.Jay-Goo:RangeSeekBar:3.0.0'
 
-    implementation "com.github.skydoves:colorpickerview:2.2.1"
+    implementation "com.github.skydoves:colorpickerview:2.2.2"
 
     //圆形imageview
     implementation 'de.hdodenhof:circleimageview:3.1.0'
@@ -110,4 +110,7 @@ dependencies {
     //图片选择器
     implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.8'
 
+    implementation 'com.github.donkingliang:ConsecutiveScroller:4.4.0'
+
+    implementation 'com.hzh.ui:progressbar:1.0.0'
 }

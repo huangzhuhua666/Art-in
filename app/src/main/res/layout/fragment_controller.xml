@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.tw.artin.view.SlidingTabLayout
+        android:id="@+id/tab_top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        app:tl_divider_padding="6dp"
+        app:tl_divider_width="0dp"
+        app:tl_indicator_color="#41F3F5"
+        app:tl_indicator_height="1.5dp"
+        app:tl_indicator_width_equal_title="false"
+        app:tl_tab_padding="10dp"
+        app:tl_tab_width="80dp"
+        app:tl_textSelectColor="@android:color/white"
+        app:tl_textUnselectColor="#666666"
+        app:tl_textsize="15sp"/>
+
+    <com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:id="@+id/container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/black"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_isSticky="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_brightness"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+
+            <com.jaygoo.widget.RangeSeekBar
+                android:id="@+id/total_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                app:rsb_gravity="center"
+                app:rsb_max="100"
+                app:rsb_min="0"
+                app:rsb_mode="single"
+                app:rsb_progress_color="#43F2F6"/>
+
+            <ImageView
+                android:id="@+id/iv_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:src="@mipmap/shebei_btn_off"
+                tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>
+
+</LinearLayout>
